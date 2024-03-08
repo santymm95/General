@@ -1,0 +1,58 @@
+
+
+
+
+
+
+
+
+
+
+
+.tarea-contenedor {
+  width: 500px;
+  min-height: 65px;
+  background-color: #1b1b327a;
+  margin: 5px 0;
+  padding: 8px 15px 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.tarea-texto {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  overflow-wrap: anywhere;
+}
+
+.tarea-icono {
+  height: 35px;
+  width: 35px;
+  margin: 5px;
+  color: rgb(235, 107, 107);
+
+  /* Estilos por defecto para el icono */
+  /* Puedes añadir otros estilos según sea necesario */
+
+  /* Transición para suavizar el efecto */
+  transition: transform 0.3s ease-in-out;
+}
+
+.tarea-icono:hover {
+  /* Rotación de 120 grados (media vuelta) al hacer hover */
+  transform: rotate(180deg);
+  transform-origin: center; /* Establecer el origen de la transformación en el centro del icono */
+}
+
+
+.tarea-contenedor.completada {
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  text-decoration: line-through;
+}

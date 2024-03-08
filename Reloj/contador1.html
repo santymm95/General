@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="color_fondo" id="color_fondo">
+            <div class="numero" id="numero">Santiago Montoya</div>
+        </div>
+    </div>
+
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .contenedor{
+            height: 150px;
+            width: 320px;
+            position: relative;
+            transform: rotate(180deg);
+        }
+
+        .color_fondo{
+            height: 0px;
+            width: 100%;
+            background-color: #00ff51;
+            position: initial;
+        }
+
+         .numero{
+            height: 100%;
+            width: 100%;
+            font-size: 12.8rem;
+            font-weight: bold;
+            color: gray;
+            background-color: white;
+            mix-blend-mode: screen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            transform: rotate(-180deg);
+         }
+    </style>
+    <script>
+        const color_fondo = document.getElementById("color_fondo")
+        const numero = document.getElementById("numero");
+
+        let cantidad = 0;
+
+        let tiempo = setInterval(() => {
+            cantidad +=1
+            color_fondo.style.height=`${cantidad}%`
+            numero.textContent=cantidad
+
+            if (cantidad ===100) {
+                clearInterval(tiempo)
+            }
+            
+        }, 50);
+
+   </script>
+</body>
+</html>

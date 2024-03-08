@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal de Video</title>
+     
+</head>
+<body>
+    <!-- Botón para abrir el modal -->
+    <button id="openModal">Abrir Video</button>
+
+    <!-- El modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <video id="video" controls>
+                <source src="ruta_al_video.mp4" type="video/mp4">
+                Tu navegador no admite la reproducción de videos.
+            </video>
+        </div>
+    </div>
+
+     <script defer src="main.js"></script>
+</body>
+</html>

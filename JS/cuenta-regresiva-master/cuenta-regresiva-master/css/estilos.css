@@ -1,0 +1,146 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto; /* Cambiado a 'auto' para habilitar el desplazamiento */
+}
+
+.container {
+    height: 100%;
+    overflow-y: auto; /* Habilita el desplazamiento vertical si el contenido es más grande que la ventana */
+}
+
+h1,h5{
+	color: black;
+}
+
+/* ? ----- PORTADA ----- */
+/* ? ----- PORTADA ----- */
+.portada {
+    width: 100%;
+	background-color: rgb(69, 74, 105);
+	color: white;
+    min-height: 100vh;
+    /* position: fixed; Quitar esta línea */
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: .5s ease-out all;
+}
+
+ 
+.portada .header {
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.portada .header .logotipo {
+	font-size: 50px;
+	font-size: 900;
+	 
+}
+
+.portada .header .mensaje {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+
+
+/* ? ----- MAIN ----- */
+ 
+
+
+
+/* ? ----- Cuenta Regresiva ----- */
+#cuenta {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+	
+}
+
+.simply-section {
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	width: 50px;
+	box-shadow: 5px 5px 5px black;
+	height: 50px;
+	color: black;
+	margin: 0 20px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	 
+}
+
+ 
+.simply-amount {
+	display: block;
+	font-size: 20px;
+	font-weight: 700;
+	
+}
+
+.simply-word {
+	font-weight: 300;
+	font-size: 10px;
+	
+}
+
+.cuentas{
+	display: flex;
+	flex-direction: column;
+	
+	
+}
+ 
+ 
+#cuenta1{
+	display: flex;
+	margin-bottom: 10px;
+	
+}
+#cuenta2{
+	display: flex;
+	margin-bottom: 10px;
+}
+#cuenta3{
+	display: flex;
+	margin-bottom: 10px;
+}
+#cuenta4{
+	display: flex;
+	margin-bottom: 10px;
+}
+#cuenta5{
+	display: flex;
+	margin-bottom: 10px;
+}
+#cuenta6{
+	display: flex;
+	margin-bottom: 10px;
+}
+#cuenta7{
+	display: flex;
+	margin-bottom: 10px;
+}
+#cuenta8{
+	display: flex;
+	margin-bottom: 10px;
+}
+#cuenta9{
+	display: flex;
+	margin-bottom: 10px;
+}
+#cuenta10{
+	display: flex;
+	margin-bottom: 10px;
+}

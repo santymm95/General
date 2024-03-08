@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    // 1 Pedra
+    // 2 Papel
+    // 3 Tijeras
+   
+    let jugador1 = prompt("Ingrese su numero 1✊ 2✋ 3✌")
+    var jugador2 = Math.ceil(Math.random()*3);
+    alert(`Tu adversario escogio ${jugador2}`)
+    //combate
+
+    if (jugador1 == jugador2)
+        alert("Empate")
+    else if (jugador1 ==1 && jugador2 ==3)
+        alert("Ganaste")
+    else if (jugador1 ==2 && jugador2 ==1)
+        alert("Ganaste")
+    else if (jugador1 == 3 && jugador2 == 2)
+        alert("Ganaste")
+    else{
+        alert("Perdiste")
+        }
+
+    
+    
+
+
+
+
+   </script>
+</body>
+</html>

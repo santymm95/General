@@ -1,0 +1,31 @@
+    .navbar-link {
+        position: relative;
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    
+    .navbar-link:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #ffffff;
+        transition: width 0.2s ease;
+    }
+    
+    .navbar-link:hover:before {
+        width: 100%;
+    }
+    
+
+    @media (max-width: 1250px) {
+        .logo-s{
+            display: none;
+        }
+
+        
+
+      }

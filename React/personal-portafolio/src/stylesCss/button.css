@@ -1,0 +1,16 @@
+.btn-success{
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: rgba(113, 113, 113, 0.582);
+    margin-top: 10px;
+    border-radius: 15px;
+   
+}
+
+.btn-success:hover{
+    background-color:#ebebeb;
+    color: rgb(40, 72, 44) ;
+    
+}

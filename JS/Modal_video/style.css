@@ -1,0 +1,93 @@
+/* Estilos generales y reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333; /* Color de fondo del cuerpo */
+}
+
+/* Estilo para el botón de abrir */
+#openModal {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#openModal:hover {
+    background-color: #1e78c2; /* Cambio de color al pasar el ratón sobre el botón */
+}
+
+/* Estilos para el modal */
+#videoModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Estilo para el botón de cierre */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 24px;
+    color: #666;
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: #e74c3c; /* Cambio de color al pasar el ratón sobre el botón de cierre */
+}
+
+/* Estilo para el video */
+#video {
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    max-height: 80vh;
+    object-fit: cover;
+}
+
+/* Estilos adicionales para mejorar el aspecto futurista */
+#videoModal {
+    backdrop-filter: blur(10px);
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #ff4e50, #f9d423);
+    color: #333;
+}
+
+#openModal {
+    background: linear-gradient(135deg, #ff4e50, #f9d423);
+    color: #fff;
+}

@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: rgba(255, 255, 255, 0.278);
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+}
+
+
+
+
+
+/* Estilos de la lista */
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+/* Estilos de los enlaces */
+a {
+   
+    text-decoration: none;
+    position: relative;
+}
+
+/* Estilos de la línea debajo del enlace al pasar el cursor */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    background-color:  #9cdcff;
+    height: 3px;
+    width: 0;   
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+nav a{
+    color: #000;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    padding: 10px 40px;
+}
+
+
+/* Estilos del logotipo de la barra de navegación */
+/*
+.navbar img {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin-bottom: -15px;
+    width: 150px;
+    border-width: 0px;
+    border: 0px;
+}*/
+
+
+ 
+
+/* Estilos del menú de navegación */
+
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/* Estilos de los enlaces del menú */
+.nav-link {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    color: white;
+    font-weight: 550;
+    list-style: none;
+    font-size: 14px;
+    padding: 8px 8px;
+    font-family: 'Poppins', sans-serif;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+
+.nav-link:hover {
+    color:#4ba7f8;
+}
+
+/*
+.nav-brading img{
+    width: 80px ;
+    margin-bottom: 10px;
+}*/
+
+/* Estilos específicos para el elemento de idioma */
+li #languaje {
+    padding: 5px;
+}
+
+/* Estilos del icono del menú hamburguesa */
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+
+/* Estilos de la barra del menú hamburguesa */
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    background-color: blueviolet;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.banner .container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(#9cdcff, #1cafff);
+}
+.banner .container #scene {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.banner .container #scene #text {
+  display: flex !important;
+  position: relative;
+  color: #fff;
+  font-size: 8vw;
+  z-index: 100;
+}
+.banner .container #scene #text span {
+  position: relative !important;
+  display: inline-block;
+  text-shadow: 1px 1px 0 #e1e1e1, 2px 2px 0 #e1e1e1, 3px 3px 0 #e1e1e1, 4px 4px 0 #e1e1e1, 5px 5px 0 #e1e1e1, 6px 6px 0 #e1e1e1, 7px 7px 0 #e1e1e1, 8px 8px 0 #e1e1e1, 25px 35px 0px rgba(0, 0, 0, 0.1);
+}
+.banner .container #scene .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.banner .container #scene .layer:nth-child(5) {
+  z-index: 1;
+}
+.banner .container #scene .layer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner .container #scene .layer.z {
+  z-index: 101;
+}
+
+img{
+     position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+/*//////////////*/
+
+
+
+@media(max-width:1080px) {
+
+    .scene{
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .hamburguer {
+        display: block;
+
+    }
+
+    .linea{
+        display: none;
+    }
+
+    table td {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+
+    }
+
+    .hamburguer.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+    }
+
+
+
+
+    .nav-item {
+        margin: 2px 0;
+
+    }
+
+
+
+    .nav-menu.active {
+        left: 0;
+
+    }
+
+    .nav-menu {
+        z-index: 1;
+        display: flex;
+
+
+    }
+
+
+
+    .nav-item {
+        border-top: 1px blueviolet solid;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+   
+
+ 
+ 
+
+}

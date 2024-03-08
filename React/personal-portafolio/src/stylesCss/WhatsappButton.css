@@ -1,0 +1,45 @@
+/* WhatsappButton.css */
+
+.what {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 14px;
+    transition: all 0.3s ease-in-out; /* Agrega una transición suave */
+  }
+  
+  /* Whatsapp btn*/
+  .btn-wsp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    line-height: 63px;
+    bottom: 25px;
+    right: 25px;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    z-index: 100;
+    transition: all 300ms ease;
+  }
+  
+  
+  
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.3);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Aplica la animación al botón cada 3 segundos */
+  .btn-wsp.heartbeat {
+    animation: heartbeat 3s infinite;
+  }
+  
+  

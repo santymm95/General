@@ -1,0 +1,86 @@
+/* Estilos generales para las habilidades */
+.skill {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.skill-bx {
+  text-align: center;
+  box-shadow: inset 0 0 10px rgba(172, 172, 172, 0.5);
+}
+
+.titulo-habilidades, h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: rgb(198, 198, 198);
+  -webkit-text-stroke: 1px rgb(198, 198, 198);
+}
+
+h2 {
+  font-size: 20px;
+  
+}
+
+.skill-bx p {
+  color: #ececec;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+ 
+
+.skill-item h5 {
+  font-size: 18px;
+  color: #252525;
+  margin: 0;
+}
+
+ 
+.card {
+  background-color: #232323;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.skill-meter {
+  text-align: center;
+}
+
+.skill-meter p {
+  margin-top: 10px;
+  color: #252525;
+}
+
+/* Estilos para las tarjetas y colapsos de la barra de habilidades con transición suave */
+.skill-meter .card,
+.skill-meter .collapsing {
+  transition: height 0.6s  ease-in-out;
+  transition: 0.3s ease-in-out; /* Reducido el tiempo de transición para mejorar la suavidad */
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 720px) {
+  .skill-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
